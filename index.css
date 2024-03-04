@@ -1,0 +1,167 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.disclaimer-cont{
+    background: linear-gradient(135deg,rgb(255, 0, 0),purple);
+    height:50px;
+    width: 100%;
+}
+
+.disclaimer{
+    background: linear-gradient(135deg,rgba(255, 0, 0, 0.234),rgba(128, 0, 128, 0));
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 22px;
+
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    animation: my-animation 15s linear infinite;
+}
+  
+  /* for Firefox */
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+.header{
+    background: linear-gradient(135deg,rgb(255, 0, 0),purple);
+}
+#currentStatus{
+    color: white;
+    font-size: 35px;
+    padding: 24px 0 8px;
+    text-align: center;
+    font-weight: bold;
+}
+.statuses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    margin-top: 10px;
+}
+.badge{
+    background-color: #5bc03f;
+    font-weight: bold;
+    padding: 12px 50px;
+    border-radius: 30px;
+   outline: none;
+   border: none;
+    margin: 10px;
+    display: inline-flex;
+    color:white;
+    height: 50px;
+    width: 200px;
+    
+    
+
+}
+
+#status-time{
+    padding: 10px 20px;
+    font-size: 19px;
+    outline: none;
+    border: none;
+
+}
+
+
+.mapview{
+   height: 380px;
+   width: 900px;
+    background-color: grey;
+    margin-left: 230px;
+}
+.mapview img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+}
+
+#driver-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    margin-top: 40px;
+}
+.driver-photo,.call{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    object-fit: cover;
+}
+.call{
+    height: 32px;
+    width: 32px;
+}
+.driver-status{
+    padding: 16px;
+    flex:1;
+}
+.driver-into{
+    font-size: 22px;
+    font-weight: 600;
+}
+.driver-msg{
+    padding-top:4px 8px;
+    font-size: 17px;
+
+}
+.none{
+    display: none;
+}
+
+button{
+    padding: 8px;
+    margin: 0 10px;
+}
+.butt{
+   height: 100px;
+padding: 20px 50px;
+background: linear-gradient(135deg,rgb(255, 0, 0),purple);
+cursor:pointer;
+}
+#findValet,
+#acceptOrder
+,#deliverOrder{
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #5bc03f;
+    border: none;
+    cursor: pointer;
+}
+.butt button{
+    margin-left: 135px;
+}
+#acceptOrder{
+    height: 50px;
+    width: 290px;
+}
